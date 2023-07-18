@@ -18,7 +18,7 @@ const PrivateRoutes = () => {
             const decodedToken = jwtDecode(cookies.token);
             return decodedToken.exp < (Date.now() / 1000);
         } else {
-            console.log("Private Rt Cookies Valid")
+            console.log("Private Rt Cookies Valid" + cookies)
             return false;
         }
     }
