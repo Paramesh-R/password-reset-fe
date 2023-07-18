@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ModalCentered from '../../components/Modal/ModalCentered';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -82,9 +82,9 @@ const ForgotPassword = () => {
 
                                 {/* Sign In or Sign Up */}
                                 <div className="m-3 text-center">
-                                    <a href="/signIn" className="text-secondary text-decoration-none "><small>Sign In</small></a>
+                                    <Link to="/signIn" className="text-secondary text-decoration-none "><small>Sign In</small></Link >
                                     <span className='text-muted px-3'>|</span>
-                                    <a href="/signUp" className="text-secondary text-decoration-none "><small>Sign Up</small></a>
+                                    <Link to="/signUp" className="text-secondary text-decoration-none "><small>Sign Up</small></Link >
                                 </div>
 
 

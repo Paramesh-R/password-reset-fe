@@ -134,7 +134,7 @@ const SignIn = () => {
 
                                     {/* Link - Reset Password */}
                                     <div className="m-3 text-center">
-                                        <a href="/forgotPassword" className="text-secondary text-decoration-none "><small>Forgot password?</small></a>
+                                        <Link to="/forgotPassword" className="text-secondary text-decoration-none "><small>Forgot password?</small></Link>
                                     </div>
                                     {/* ________________________ */}
 

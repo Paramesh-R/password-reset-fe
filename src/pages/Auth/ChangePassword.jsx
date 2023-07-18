@@ -130,9 +130,7 @@ const ChangePassword = () => {
                                     </div>
                                     {/* -------------------------------------------- */}
 
-                                    {/* <div className="m-3 text-center">
-                                        <a href="javascript(void)" className="text-secondary text-decoration-none "><small>Forgot password?</small></a>
-                                    </div> */}
+                                  
 
                                     {/* --------- BUTTON - UPDATE PASSWORD --------- */}
                                     <div className="d-grid">

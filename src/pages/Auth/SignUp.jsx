@@ -121,22 +121,6 @@ const SignUp = () => {
                                         <label htmlFor="floatingPassword"><span className="text-muted">Password</span></label>
                                     </div>
 
-                                    {/* <div className="form-floating mb-3">
-                                        <input
-                                            type="password"
-                                            className="form-control"
-                                            id="floatingPassword"
-                                            placeholder="Password"
-                                            name="password2"
-                                            onChange={(event) => handleOnChange(event)}
-                                        />
-                                        <label htmlFor="floatingPassword"><span className="text-muted">Re-Enter Password</span></label>
-                                    </div> */}
-
-                                    {/* <div className="m-3 text-center">
-                                        <a href="javascript(void)" className="text-secondary text-decoration-none "><small>Forgot password?</small></a>
-                                    </div> */}
-
 
                                     <div className="d-grid">
                                         <button className="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Register</button>
