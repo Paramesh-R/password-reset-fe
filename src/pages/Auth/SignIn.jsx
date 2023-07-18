@@ -43,7 +43,7 @@ const SignIn = () => {
                 { ...loginPayload },
                 { withCredentials: true }
             );
-            // console.log(data);
+            console.log(data);
 
 
             // Validate User VERIFIED Account
