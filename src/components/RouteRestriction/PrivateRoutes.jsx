@@ -5,19 +5,24 @@ import { Navigate, Outlet } from 'react-router-dom';
 const PrivateRoutes = () => {
 
     const [cookies] = useCookies([]);
-    
+
     function isTokenExpired() {
 
-        if (!cookies) return false;
+        if (!cookies) {
+            console.log("Private Rt Cookies Null: " + cookies)
+            return true;
+        }
+
 
         if (cookies.token) {
             const decodedToken = jwtDecode(cookies.token);
             return decodedToken.exp < (Date.now() / 1000);
         } else {
+            console.log("Private Rt Cookies Valid")
             return false;
         }
     }
-    
+
     return isTokenExpired() ? <Navigate to="/signIn" /> : <Outlet />
 }
 
