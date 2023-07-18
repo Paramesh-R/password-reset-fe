@@ -55,7 +55,7 @@ const ThanksPage = () => {
                     </p>
 
                     <Link
-                        to={"/sign-in"}
+                        to={"/signIn"}
                         onClick={handleCookie}
                         className="text-danger text-decoration-none blockquote "
                     >
@@ -68,7 +68,7 @@ const ThanksPage = () => {
                         <h1 className="display-6"><strong>Please Login!</strong></h1>
 
                         <Link
-                            to={"/sign-in"}
+                            to={"/signIn"}
                             onClick={handleCookie}
                             className="text-danger text-decoration-none blockquote "
                         >

@@ -82,9 +82,9 @@ const ForgotPassword = () => {
 
                                 {/* Sign In or Sign Up */}
                                 <div className="m-3 text-center">
-                                    <a href="/sign-in" className="text-secondary text-decoration-none "><small>Sign In</small></a>
+                                    <a href="/signIn" className="text-secondary text-decoration-none "><small>Sign In</small></a>
                                     <span className='text-muted px-3'>|</span>
-                                    <a href="/sign-up" className="text-secondary text-decoration-none "><small>Sign Up</small></a>
+                                    <a href="/signUp" className="text-secondary text-decoration-none "><small>Sign Up</small></a>
                                 </div>
 
 
@@ -95,7 +95,7 @@ const ForgotPassword = () => {
             </div>
             <ModalCentered
                 show={modalShow}
-                onHide={() => { setModalShow(false); navigate("/sign-in"); }}
+                onHide={() => { setModalShow(false); navigate("/signIn"); }}
                 modalTitle="Reset Email Sent."
                 message="Reset link has been sent to the registered email."
             />

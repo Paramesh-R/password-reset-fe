@@ -145,7 +145,7 @@ const SignUp = () => {
 
                                 <div className="m-3 text-center text-muted">
                                     <small>
-                                        Existing User? <Link to={"/sign-in"} className="text-muted">Sign In</Link>
+                                        Existing User? <Link to={"/signIn"} className="text-muted">Sign In</Link>
                                     </small>
                                 </div>
                             </div>

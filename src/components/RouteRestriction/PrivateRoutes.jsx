@@ -18,7 +18,7 @@ const PrivateRoutes = () => {
         }
     }
 
-    return isTokenExpired() ? <Outlet /> : <Navigate to="/sign-in" />
+    return isTokenExpired() ? <Outlet /> : <Navigate to="/signIn" />
 }
 
 export default PrivateRoutes

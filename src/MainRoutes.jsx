@@ -12,19 +12,19 @@ import ActivateAccount from './pages/Auth/ActivateAccount'
 const MainRoutes = () => {
     return (
         <Routes>
-            <Route path="/sign-in" element={<SignIn />} />
-            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/signIn" element={<SignIn />} />
+            <Route path="/signUp" element={<SignUp />} />
 
-            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/forgotPassword" element={<ForgotPassword />} />
             <Route path="/success" element={<ThanksPage />} />
 
             <Route path="/activate-account/:activationToken" element={<ActivateAccount />} />
             <Route path="/resetpassword/:resetToken" element={<ChangePassword />} />
             {/* Protected Route */}
-            <Route path="/" element={<PrivateRoutes />}> 
+            <Route path="/" element={<PrivateRoutes />}>
                 <Route path="/" element={<Dashboard />} />
             </Route>
-            
+
             {/* Error 404 */}
             <Route path="*" element={<Error404 />} />
         </Routes >

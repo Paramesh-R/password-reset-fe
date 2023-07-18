@@ -37,7 +37,7 @@ const ChangePassword = () => {
                     // Handle successful response
                     if (response.data.success === true) {
                         toast.success(response.message);
-                        setTimeout(() => { navigate("/sign-in"); }, 1000);
+                        setTimeout(() => { navigate("/signIn"); }, 1000);
                     }
                 }
             )
@@ -49,7 +49,7 @@ const ChangePassword = () => {
                         return toast.error("User email does not exist", error)
                     }
                     toast.error(error.response.data)
-                    setTimeout(() => { navigate("/sign-in"); }, 1000);
+                    setTimeout(() => { navigate("/signIn"); }, 1000);
                 }
             )
 
@@ -149,7 +149,7 @@ const ChangePassword = () => {
 
                                 <div className="m-3 text-center text-muted">
                                     <small>
-                                        Existing User? <Link to={"/sign-in"} className="text-muted">Sign In</Link>
+                                        Existing User? <Link to={"/signIn"} className="text-muted">Sign In</Link>
                                     </small>
                                 </div>
                             </div>

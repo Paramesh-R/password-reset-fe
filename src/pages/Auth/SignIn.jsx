@@ -135,7 +135,7 @@ const SignIn = () => {
 
                                     {/* Link - Reset Password */}
                                     <div className="m-3 text-center">
-                                        <a href="/forgot-password" className="text-secondary text-decoration-none "><small>Forgot password?</small></a>
+                                        <a href="/forgotPassword" className="text-secondary text-decoration-none "><small>Forgot password?</small></a>
                                     </div>
                                     {/* ________________________ */}
 
@@ -151,7 +151,7 @@ const SignIn = () => {
                                 {/* Link - New User Registration */}
                                 <div className="m-3 text-center text-muted">
                                     <small>
-                                        New User? <Link to={"/sign-up"} className="text-muted">Sign up</Link>
+                                        New User? <Link to={"/signUp"} className="text-muted">Sign up</Link>
                                     </small>
                                 </div>
                                 {/* ________________________ */}
@@ -164,7 +164,7 @@ const SignIn = () => {
             {/* VERTICALLY CENTERED MODEL */}
             <ModalCentered
                 show={modalShow}
-                onHide={() => { setModalShow(false); navigate("/sign-in"); }}
+                onHide={() => { setModalShow(false); navigate("/signIn"); }}
                 modalTitle="Activate your account."
                 message="Please follow the instructions in the email to verify your account."
             />

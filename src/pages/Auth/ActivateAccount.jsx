@@ -63,7 +63,7 @@ const ActivateAccount = () => {
                         Your account has been activated successfully.
                     </p>
 
-                    <Link to={"/sign-in"} className="text-danger text-decoration-none blockquote ">Return to Sign In</Link>
+                    <Link to={"/signIn"} className="text-danger text-decoration-none blockquote ">Return to Sign In</Link>
                 </div>
             }
 
@@ -77,7 +77,7 @@ const ActivateAccount = () => {
                         Activation token is invalid or has expired.
                     </p>
 
-                    <Link to={"/sign-in"} className="text-danger text-decoration-none blockquote ">Return to Sign In</Link>
+                    <Link to={"/signIn"} className="text-danger text-decoration-none blockquote ">Return to Sign In</Link>
                 </div>
             }
         </>
