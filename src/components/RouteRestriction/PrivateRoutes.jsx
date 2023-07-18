@@ -7,7 +7,7 @@ const PrivateRoutes = () => {
     const [cookies] = useCookies([]);
 
     function isTokenExpired() {
-
+        console.log(cookies)
         if (!cookies) {
             console.log("Private Rt Cookies Null: " + cookies)
             return true;
