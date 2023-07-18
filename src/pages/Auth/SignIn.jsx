@@ -12,7 +12,7 @@ import { useCookies } from "react-cookie";
 const SignIn = () => {
     const navigate = useNavigate();
     // const [cookies, setCookie, removeCookie] = useCookies(['token']);
-    const [, , removeCookie] = useCookies(['token']);
+    const [, setCookie, removeCookie] = useCookies(['token']);
     // const { removeCookie } = useCookies(['token']);
 
 
@@ -45,6 +45,10 @@ const SignIn = () => {
             );
             console.log(data);
 
+            // validate token and set set cookies
+            if (data.token) {
+                setCookie("token", data.token)
+            }
 
             // Validate User VERIFIED Account
             if (!data.user.verified) return signOut_RedirectToSignIn();
