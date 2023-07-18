@@ -37,7 +37,7 @@ const ChangePassword = () => {
                     // Handle successful response
                     if (response.data.success === true) {
                         toast.success(response.message);
-                        setTimeout(() => { navigate("/signIn"); }, 1000);
+                        setTimeout(() => { navigate("/signIn"); }, 3000);
                     }
                 }
             )
@@ -75,12 +75,13 @@ const ChangePassword = () => {
 
                                 {/* Logo */}
                                 <div className="d-flex justify-content-center align-items-center p-4">
-                                    <img
+                                    {/* <img
                                         src="../assets/images/logo.png"
                                         alt="logo"
                                         loading="lazy"
                                         className="w-4/5"
-                                    />
+                                    /> */}
+                                    <h1 className="display-4">Authentication</h1>
                                 </div>
 
                                 {/* Heading */}

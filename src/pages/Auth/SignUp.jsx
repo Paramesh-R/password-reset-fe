@@ -30,7 +30,7 @@ const SignUp = () => {
                 { withCredentials: true }
             );
 
-            console.log(data)
+            // console.log(data)
 
             const { success, message } = data;
 

@@ -1,10 +1,9 @@
 import axios from "axios";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import ModalCentered from "../../components/Modal/ModalCentered";
 import { useCookies } from "react-cookie";
-import { UserContext } from "../../UserContext";
 
 
 
@@ -12,9 +11,9 @@ import { UserContext } from "../../UserContext";
 
 const SignIn = () => {
     const navigate = useNavigate();
-    const { setUserInfo } = useContext(UserContext);
     // const [cookies, setCookie, removeCookie] = useCookies(['token']);
-    const { removeCookie } = useCookies(['token']);
+    const [, , removeCookie] = useCookies(['token']);
+    // const { removeCookie } = useCookies(['token']);
 
 
     const initialData = { email: "", password: "", remember: false, };
@@ -44,16 +43,16 @@ const SignIn = () => {
                 { ...loginPayload },
                 { withCredentials: true }
             );
-            console.log(data);
+            // console.log(data);
 
 
             // Validate User VERIFIED Account
             if (!data.user.verified) return signOut_RedirectToSignIn();
 
             const { success, message } = data;
-            setUserInfo(data.user)
-            console.log("message");
-            console.log(message);
+            // setUserInfo(user)
+            console.log("message", message);
+            console.log("success", success);
 
             if (success) {
                 handleSuccess()

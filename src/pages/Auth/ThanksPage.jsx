@@ -5,7 +5,8 @@ import jwtDecode from 'jwt-decode';
 import { useCookies } from 'react-cookie';
 
 const ThanksPage = () => {
-    const { removeCookie } = useCookies(['token']);
+    // const { removeCookie } = useCookies(['token']);
+    const [, , removeCookie] = useCookies(['token']);
     const [tokenExpired, setTokenExpired] = useState(null);
     const navigate = useNavigate();
 

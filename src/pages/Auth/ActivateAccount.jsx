@@ -18,7 +18,7 @@ const ActivateAccount = () => {
             .post(`${process.env.REACT_APP_SERVER_URL}/api/users/activate/${activationToken}`)
             .then(response => response.data)
             .then(data => {
-                console.log(data)
+                console.log("Activate Account:", data)
                 // Handle the response from the server
                 if (data.success) {
                     setActivationStatus('Account activated successfully!');
@@ -37,20 +37,9 @@ const ActivateAccount = () => {
 
 
     }, [activationToken]);
-    
+
     console.log(activationStatus)
 
-    /* return (
-        <div>
-            <h2>Account Activation</h2>
-            <p>{activationToken ? activationToken : "None"}</p>
-            <p>{activationStatus ? activationStatus : "None"}</p>
-        </div>
-        
-
-    ); */
-
-    /* activationStatus */
     return (
         <>
             {
